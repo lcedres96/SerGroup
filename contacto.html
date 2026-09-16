@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — SER Group</title>
+<meta name="description" content="Hacemos simple lo que tu empresa necesita para crecer. Escribinos a contacto@sergroup.com.ar.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header-wrap">
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <nav class="nav-side nav-left">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+      </nav>
+      <a href="index.html" class="logo" aria-label="SER Group — inicio">
+        <img src="assets/img/logo-ser.png" alt="SER Group">
+      </a>
+      <nav class="nav-side nav-right">
+        <div class="nav-item-dropdown">
+          <a href="capacitaciones.html" class="nav-link">Capacitaciones</a>
+          <button class="nav-caret-btn" aria-expanded="false" aria-label="Ver cursos destacados">
+            <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <a href="capacitaciones-marketing-branding.html" class="nav-dropdown-link">
+              <span class="ndl-title">Marketing &amp; Branding</span>
+            </a>
+            <a href="capacitaciones-calidad-e-inocuidad.html" class="nav-dropdown-link">
+              <span class="ndl-title">Calidad e Inocuidad</span>
+            </a>
+            <a href="capacitaciones-sustentabilidad.html" class="nav-dropdown-link">
+              <span class="ndl-title">Sustentabilidad</span>
+            </a>
+            <a href="capacitaciones-management.html" class="nav-dropdown-link">
+              <span class="ndl-title">Management</span>
+            </a>
+            <a href="capacitaciones-pcqi.html" class="nav-dropdown-link">
+              <span class="ndl-title">PCQI</span>
+              <span class="ndl-sub">Individuo Calificado en Controles Preventivos</span>
+            </a>
+            <a href="capacitaciones.html" class="nav-dropdown-link nav-dropdown-link--all">
+              Ver todas las capacitaciones
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+        <a href="ser-informa.html" class="nav-link">SER Informa</a>
+        <a href="contacto.html" class="nav-link active">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="nosotros.html" class="nav-link">Nosotros</a>
+      <a href="servicios.html" class="nav-link">Servicios</a>
+      <div class="mobile-nav-item">
+        <div class="mobile-nav-row">
+          <a href="capacitaciones.html" class="nav-link">Capacitaciones</a>
+          <button class="nav-caret-btn" aria-expanded="false" aria-label="Ver cursos destacados">
+            <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+        </div>
+        <div class="mobile-nav-submenu">
+          <a href="capacitaciones-marketing-branding.html" class="mobile-nav-sublink">Marketing &amp; Branding</a>
+          <a href="capacitaciones-calidad-e-inocuidad.html" class="mobile-nav-sublink">Calidad e Inocuidad</a>
+          <a href="capacitaciones-sustentabilidad.html" class="mobile-nav-sublink">Sustentabilidad</a>
+          <a href="capacitaciones-management.html" class="mobile-nav-sublink">Management</a>
+          <a href="capacitaciones-pcqi.html" class="mobile-nav-sublink">PCQI</a>
+          <a href="capacitaciones.html" class="mobile-nav-sublink mobile-nav-sublink--all">Ver todas las capacitaciones</a>
+        </div>
+      </div>
+      <a href="ser-informa.html" class="nav-link">SER Informa</a>
+      <a href="contacto.html" class="nav-link active">Contacto</a>
+    </nav>
+  </header>
+</div>
+
+<main>
+
+  <section class="card card-green reveal">
+    <div class="card-inner" style="text-align:center;padding:70px 60px">
+      <p class="eyebrow" style="color:var(--black); opacity:0.6">Contacto</p>
+      <h1>Empecemos a trabajar juntos</h1>
+      <p class="closing-tagline">Hacemos simple lo que tu empresa necesita para crecer.</p>
+    </div>
+  </section>
+
+  <section class="card card-white reveal">
+    <div class="card-inner">
+      <div class="contact-grid">
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="field">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="vos@empresa.com">
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Contanos qué necesita tu empresa"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p id="form-status" class="eyebrow" style="display:none;margin:14px 0 0"></p>
+        </form>
+
+        <div class="contact-side">
+          <div class="contact-card">
+            <h4>Escribinos directo</h4>
+            <p style="margin-bottom:10px">¿Preferís mandarnos un mail? También podés escribirnos acá:</p>
+            <a href="mailto:contacto@sergroup.com.ar" class="mail">contacto@sergroup.com.ar</a>
+          </div>
+          <div class="contact-card">
+            <h4>Tiempo de respuesta</h4>
+            <p style="margin:0">Te respondemos a la brevedad para coordinar los próximos pasos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="assets/img/logo-ser.png" alt="SER Group" style="filter:brightness(0) invert(1)">
+    <nav class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="capacitaciones.html">Capacitaciones</a>
+      <a href="ser-informa.html">SER Informa</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> SER Group. Todos los derechos reservados.</span>
+    <a href="mailto:contacto@sergroup.com.ar">contacto@sergroup.com.ar</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
