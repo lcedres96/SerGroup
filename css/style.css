@@ -262,6 +262,21 @@ p { margin: 0 0 1em; }
 }
 .collage .small img { width: 100%; height: 190px; object-fit: cover; }
 
+/* ---------- placeholder: caja reservada para una foto que todavía no subimos ---------- */
+.photo-placeholder {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; height: 100%;
+  background: var(--sf-mini-bg);
+  border: 2px dashed var(--sf-mini-border);
+  border-radius: var(--radius);
+  color: var(--sf-text-soft);
+  text-align: center; padding: 16px;
+}
+.photo-placeholder svg { width: 30px; height: 30px; opacity: 0.65; }
+.photo-placeholder span { font-family: var(--font-heading); font-weight: 700; font-size: 0.78rem; }
+.collage .wide .photo-placeholder { height: 300px; }
+.collage .small .photo-placeholder { height: 190px; }
+
 /* ---------- page hero (páginas internas) ---------- */
 .page-hero-inner { padding: 90px 60px 60px; }
 .page-hero-lead { font-size: 1.05rem; max-width: 68ch; margin-top: 14px; }
@@ -399,6 +414,20 @@ p { margin: 0 0 1em; }
 
 /* ---------- equipo ---------- */
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 10px; }
+/* variante para cuando solo hay 2 socios: cards más grandes y centradas en vez de ocupar las 3 columnas */
+.team-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 320px));
+  justify-content: center;
+  gap: 32px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-grid-2 .team-photo { width: 132px; height: 132px; }
+.team-grid-2 .team-card { padding: 30px 26px; }
+.team-grid-2 .team-card h3 { font-size: 1.2rem; }
+.team-grid-2 .team-role { font-size: 0.88rem; }
+.team-grid-2 .team-card p { font-size: 0.92rem; }
 .team-card { position: relative; background: var(--sf-mini-bg); border: 1px solid var(--sf-mini-border); border-radius: var(--radius); padding: 22px; margin-bottom: 22px; text-align: center; }
 .team-linkedin {
   position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%);
@@ -441,6 +470,7 @@ p { margin: 0 0 1em; }
 .cta-final-card p { color: rgba(20,20,20,0.7); max-width: 40ch; }
 .cta-final-photo { border-radius: var(--radius); overflow: hidden; }
 .cta-final-photo img { width: 100%; height: 220px; object-fit: cover; }
+.cta-final-photo .photo-placeholder { height: 220px; }
 
 /* ===========================================================
    Nav: dropdown de "Capacitaciones" (desktop hover/click + mobile expandible)
